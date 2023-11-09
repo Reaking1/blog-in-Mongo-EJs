@@ -8,7 +8,6 @@ const Post = require('../models/Post')
 
 router.get('', async (req,res) => {
     
-
         try {
 
             const locals = {
@@ -46,7 +45,6 @@ router.get('', async (req,res) => {
 
 
 });
-       //function inserThePost () {
       //     Post.insertMany([
                 //{
         //        title: "Something we do all the time",
@@ -69,18 +67,7 @@ router.get('', async (req,res) => {
             //    body: "Emo body right here my friend"
           //  },
         //])
-      //  }
-
-        //inserThePost();
-
-
-
-
-
-
-  
-
-
+      //  
 //Getting a Post by its :id
 
 router.get('/post/:id', async (req,res) => {
@@ -149,6 +136,7 @@ router.get('/contact', (req,res) => {
         currentRoute: '/contact'
     });
 });
+
 
 
 module.exports = router;
